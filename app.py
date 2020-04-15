@@ -26,3 +26,10 @@ def ping():
     result = cliente.get_result()
     return  jsonify({'result': lista_result[len(lista_result)-2]+'traceroute: '+ str(result)})
 
+
+app.run(
+  host = '0.0.0.0',
+  debug = True,
+  port = 8080
+)
+
